@@ -1,0 +1,1144 @@
+.app{
+  display: none;
+}
+.page1 {
+  display: none;
+}
+.page0 {
+  display: none !important;
+}
+.active{
+  display: block !important;
+}
+.main .header{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.main .header ul{
+  display: flex;
+}
+.main .header ul li{
+  font-size: 18px;
+  margin: 8px 12px;
+}
+.main .header ul li a{
+  color: rgb(173, 173, 173);
+}
+.main .header .active{
+  font-weight: 500;
+  color: rgb(32, 32, 32);
+}
+
+.main .header .line{
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(89, 156, 89);
+  position: relative;
+  left: 100px;
+  transition: left 0.3s ease;
+}
+.main .header .right{
+  display: flex;
+  margin: 8px;
+}
+.main .header .right a span{
+ font-size: 25px;
+ text-align: center;
+ margin-right: 10px;
+ vertical-align: middle;
+}
+.main .header .right img{
+  width: 70px;
+  height: 30px;
+}
+.main .tab-content .item{
+  display: none;
+}
+.main .tab-content .active{
+  display: block flex ;
+}
+
+/* 推荐页 */
+.recommend{
+  flex-wrap: wrap;
+}
+.recommend .nav {
+  margin-top: 50px;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  background-color: #ffffff;
+  /* 隐藏滚动条 */
+  -ms-overflow-style: none;  /* IE 和 Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* 隐藏 Chrome、Safari 和 Opera 的滚动条 */
+.recommend .nav::-webkit-scrollbar {
+  display: none;
+}
+.recommend .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.recommend .nav ul .active{
+  font-weight: 500;
+  color: rgb(89, 156, 89);
+}
+.recommend .nav ul li {
+  padding: 10px 20px;
+}
+.recommend .nav ul li a {
+  text-decoration: none;
+}
+.recommend .content{
+  display: block;
+  column-count: 2;
+  /* 两列 */
+  column-gap: 5px;
+  width: 100%; 
+  height: auto;
+  /* min-height: 100vh; */
+  margin: 0 auto;
+  /* overflow-x: hidden; */
+}
+
+.recommend .content .column{
+  flex: 1;
+  /* width: calc(50% - 10px);  */
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  box-sizing: border-box;
+}
+.recommend .content .artical{
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  break-inside: avoid;
+  margin-bottom: 10px;
+}
+.recommend .content .artical img{
+  width: 100%;
+  object-fit: cover;
+}
+.recommend .content .artical .text{
+  display: flex;
+  width: 100%;
+  /* height: 30px; */
+  justify-content: space-between;
+}
+.recommend .content .artical .text .title{
+  width: 140px;
+}
+
+/* 关注页 */
+.follow{
+  margin-top: 50px;
+  width: 375px;
+  height: 550px;
+}
+/* 小森林页 */
+.forest{
+  width: 375px;
+  height: 550px;
+  position: relative;
+  /* display: flex !important;
+  justify-content: center;
+  align-items: center; */
+}
+.forest img{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 150px;
+}
+
+/* 关注 */
+.follow .text{
+  margin: 10px 15px;
+}
+.follow .text .line{
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgb(89, 156, 89);
+  margin: 15px 10px;
+}
+
+/* 闪聊 */
+.flashchat{
+  width: 100%;
+  height: 667px;
+  position: relative;
+}
+.flashchat img{
+  display: flex;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 150px;
+}
+
+/* 消息 */
+.message .top{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+.message .top h1{
+  display: block;
+  width: 48px;
+  height: 35px;
+  color: black;
+  border-bottom: 4px solid rgb(89, 156, 89);
+}
+.message .top .icon span{
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.message .list1{
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.message .list1 ul{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+.message .list1 ul li span{
+  display: block;
+  text-align: center;
+}
+.message .list1 ul li img{
+  width: 50px;
+  height: 50px;
+}
+.message .chat{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.message .chat a{
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.message .chat .profile{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-image:url(../images/index/微信图片_2025-04-28_193848_458.jpg);
+  background-size: 50px;
+}
+.message .chat span{
+  margin-left: 10px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 我的 */
+.user .bgi{
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.user .bgi .set{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color:rgba(168, 168, 168,0.5);
+  right: 5%;
+  top: 5%;
+}
+.user .bgi .set span{
+  font-size: 20px;
+  padding-top: 5px;
+}
+.user .bgi label{
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(233, 233, 233);
+  background-size: cover;       /* 覆盖容器，保持比例[1,3,7](@ref) */
+  background-position: center; 
+  /* background-repeat: no-repeat;  */
+}
+.user .bgi input{
+  display: none;
+}
+.user .information{
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.user .information .profile{
+  position: absolute;
+  left: 6%;
+  top: -40%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #f3f3f3;
+}
+.user .information .profile label{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-size: cover;
+  /* background-image: url(../images/微信图片_20250322220101.jpg); */
+}
+.user .information .profile input{
+  display: none;
+}
+.user .information .text {
+  padding: 45px 0 0 30px;
+}
+.user .information .text span{
+  display: block;
+  margin-bottom: 5px;
+}
+.user .information .text .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.user .information .text .id{
+  font-size: 13px;
+  color: #e0e0e0;
+}
+.user .information .text .self{
+  font-size: 16px;
+  font-weight: 400;
+}
+.user .list1 ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.user .list1 ul li{
+  font-size: 15px;
+  color: #c0c0c0;
+}
+.user .list2{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin: 10px 0;
+}
+.user .list2 span{
+  font-size: 33px;
+  color: rgb(89, 156, 89);
+}
+
+/* 底部区域 */
+.app footer{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+.app footer ul{
+  display: flex;
+  justify-content: space-between;
+}
+.app footer ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.app footer ul li .active{
+  color:rgb(89, 156, 89);
+}
+.app footer ul li span{
+  display: block;
+  font-size: 12px;
+}
+.app footer ul li .iconfont{
+  font-size: 22px;
+  /* padding-left: 7px; */
+}
+
+/* header部分 */
+.app .h3{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+}
+.app .h3 span{
+  font-size: 25px;
+  vertical-align: middle;
+}
+.app h3{
+  flex: 1;
+  text-align: center;
+}
+/* 设置 */
+.app .setting{
+  display: none;
+}
+.app .setting .function{
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 25px;
+} 
+.app .setting .function ul li{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  height: 50px;
+  border-bottom: 1px #c0c0c05b solid ;
+}
+.app .setting .function ul li span{
+  vertical-align: middle;
+  line-height: 50px;
+}
+.app .setting .function ul li .iconfont{
+  color: #c0c0c0;
+}
+.app .setting .function button{
+  display: block;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border:1px solid rgb(89, 156, 89);
+  background-color: #fff;
+  color: rgb(89, 156, 89);
+  margin-top: 20px;
+  margin: 20px auto 0;
+}
+/* 编辑资料 */
+.app .edit{
+  display: none;
+  padding: 20px;
+}
+.edit .common{
+  padding: 15px;
+  margin: 15px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.edit h4 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+}
+
+.edit input{
+  display: block;
+  margin: 8px 0;
+  border: none;
+  background-color: #ededed69;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+}
+.edit input::placeholder{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.edit .button ul{
+  display: flex;
+  justify-content: center;
+}
+.edit .button ul li{
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(89, 156, 89);
+  text-align: center;
+  line-height: 40px;
+  color: rgb(89, 156, 89);
+}
+
+.edit input:not([type="file"]),
+.edit select {
+    display: block;
+    width: 100%;
+    height: 44px;
+    margin: 10px 0;
+    padding: 0 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.avatar-upload {
+    position: relative;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.avatar-upload label{
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #c0c0c0;
+  margin-top: 15px;
+}
+.avatar-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    border: 2px solid #eee;
+}
+.avatar-preview img{
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-upload input{
+    display: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.submit-btn {
+    flex: 1;
+    height: 44px;
+    background: #07C160;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    font-size: 16px;
+}
+
+.gender-group {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-option {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.gender-option.selected {
+    border-color: #07C160;
+    background: #E5F7ED;
+}
+.edit form .introduce textarea{
+  width: 100%;
+  border: none;
+}
+
+
+/* 搜索 */
+.app .search0{
+  display: none;
+}
+.app .search0 .search1{
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.app .search0 .search1 .searchbox{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  width: 270px;
+  height: 40px;
+  background-color:#ededed70;
+  border-radius: 20px;
+}
+.app .search0 .search1 .searchbox input{
+  border-radius: 20px;
+  border: none;
+  background-color:#ededed70;
+  width: 200px;
+  height: 40px;
+}
+.app .search0 .search1 .searchbox input::placeholder{
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 40px;
+}
+.app .search0 .search1 .searchbox .iconfont{
+  position: absolute;
+}
+.app .search0 .search1 .searchbox .icon-sousuo{
+  font-size: 25px;
+  left: 5%;
+  top: 20%;
+  color: #7a7a7a;
+}
+.app .search0 .search1 .searchbox .icon-saoma{
+  font-size: 20px;
+  right: 5%;
+  top: 30%;
+  color: #7a7a7a;
+}
+.app .search0 .search1 .cancel{
+  text-align: center;
+  vertical-align: 50px;
+  line-height: 40px;
+}
+.app .search0 .common{
+  padding:20px 10px 0 10px;
+}
+.app .search0 .common .title{
+  display: flex;
+  justify-content: space-between;
+}
+.app .search0 .common .title .title1{
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  width: 90px;
+  height: 20px;
+  color: rgb(89, 156, 89);
+  border-left: 2px solid rgb(89, 156, 89);
+}
+.app .search0 .common .content{
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: pink; */
+  width: 300px;
+  /* height: 100px; */
+  /* margin-top: 10px; */
+}
+.app .search0 .common .content .text{
+  padding: 2px 14px;
+  border: 1px solid #7a7a7a5d;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+/* 搜索结果页 */
+.app .searchresult{
+  display: none;
+}
+.app .searchresult .search2{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 15px;
+}
+.app .searchresult .search2 .searchbox{
+  height: 38px;
+  position: relative;
+}
+.app .searchresult .search2 .searchbox input{
+  width: 280px;
+  height: 38px;
+  border-radius: 19px;
+  border: none;
+  background-color: #e0e0e07d;
+}
+.app .searchresult .search2 .searchbox .iconfont{
+  position: absolute;
+}
+.app .searchresult .search2 .searchbox .icon-sousuo{
+  font-size: 22px;
+  left: 4%;
+  top: 20%;
+  color: #7a7a7a;
+}
+.app .searchresult .search2 .searchbox .icon-saoma{
+  font-size: 20px;
+  right: 5%;
+  top: 25%;
+  color: #7a7a7a;
+}
+.app .searchresult .search2 .searchbox .icon-shanchu{
+  right: 15%;
+  font-size: 17px;
+  top: 30%;
+}
+.app .searchresult .search2 .cancel{
+  line-height:  35px;
+  vertical-align: middle;
+  text-align: center;
+}
+.app .searchresult .categroy{
+  position: relative;
+}
+.app .searchresult .categroy ul{
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  /* background-color: pink; */
+  border-bottom:1px solid #e0e0e0;
+}
+.app .searchresult .categroy .line{
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(89, 156, 89);
+  position: relative;
+  left: 18px;
+  top: -5px;
+  transition: left 0.3s ease;
+}
+.app .searchresult .categroy ul li{
+  margin-right: 15px;
+  color:#7a7a7a;
+}
+.app .searchresult .categroy .active{
+  font-weight: 500;
+  color: black;
+}
+.app .searchresult .common{
+  padding:20px 10px 0 10px;
+}
+.app .searchresult .common .title{
+  display: flex;
+  justify-content: space-between;
+}
+.app .searchresult .common .title .title1{
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  width: 90px;
+  height: 20px;
+  color: rgb(89, 156, 89);
+  border-left: 2px solid rgb(89, 156, 89);
+}
+.app .searchresult .common .title .more span{
+  color: #7a7a7a;
+  font-size: 12px;
+}
+
+/* 发布笔记页 */
+.app .create1{
+  display: none;
+}
+.app .create1 .container {
+  padding: 12px;
+}
+.app .create1 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.app .create1 .close-btn {
+  font-size: 24px;
+}
+.app .create1 .save-draft {
+  color: #666;
+  margin-right: 15px;
+}
+.app .create1 .publish-btn {
+  background: rgb(108, 188, 108);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: none;
+}
+
+.app .create1 .image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.app .create1 .image-item {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.app .create1 .image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app .create1 .add-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: #f5f5f5;
+}
+
+.app .create1 .delete-btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.app .create1 .title-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.app .create1 .content-editor {
+  min-height: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.app .create1 .toolbar {
+  display: flex;
+  height: 50px;
+  /* background-color: pink; */
+  border-bottom: 1px solid #eee;
+  gap: 15px;
+  margin: 10px 0;
+}
+.app .create1 .toolbar .common{
+  background-color:#c0c0c056 ;
+  color: rgb(89, 156, 89);
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+.app .create1 .location-tags {
+  height: 80px;
+  border-bottom: 1px solid #eee;
+  /* display: flex; */
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.app .create1 .location-tags .title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.app .create1 .location-tags .title span{
+  color: #7a7a7a;
+}
+.app .create1 .location-tag {
+  display:inline;
+  /* background: #f0f0f0; */
+  border:1px solid #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+.app .create1 .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.app .create1 .modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+}
+
+/* 提示弹窗 */
+.toast {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  z-index: 1000;
+}
+.toast.error { 
+  background: #e66161; 
+}
+
+/* 建议面板 */
+.suggestion-panel {
+  position: absolute;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 999;
+}
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background: #f5f5f5;
+}
+
+/* 标签样式 */
+.topic-tag {
+  color: #4CAF50;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.mention-tag {
+  color: #2196F3;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* 图片拖拽效果 */
+.image-item[draggable="true"] {
+  cursor: grab;
+}
+.image-item[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+
+/* 文章详情页 */
+.app .article11{
+  display: none;
+}
+.app .article11 header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+.article11 header .user{
+  display: flex;
+}
+.article11 header .user .back-btn{
+  font-size: 25px;
+  line-height: 50px;
+  margin:0  7px;
+}
+.article11 header .user .avatar{
+  width: 40px;
+  height: 40px;
+  /* background-color: pink; */
+  margin: auto 0;
+  border-radius: 20px;
+  background-size: cover;
+  background-image: url(../images/微信图片_20250322220101.jpg);
+}
+.article11 header .user .username{
+  margin: auto 8px;
+}
+.article11 header .user .follow1{
+  margin: auto 8px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color:rgb(143, 228, 143);
+}
+.article11 header .user .follow1.active{
+  background-color: #e0e0e0;
+}
+.article11 header .share-btn{
+  margin: auto 15px;
+  font-size: 25px;
+}
+
+/* 轮播图样式 */
+.carousel{
+  position: relative;
+  margin-top: 50px;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /*  */
+  transition: transform 0.5s ease-out;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: opacity 0.5s ease;
+}
+.carousel-item.active{
+  opacity: 1;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.dot.active {
+  background: white;
+}
+/* 话题标签 */
+.topic-tag {
+  color: #07c160;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* 互动按钮 */
+
+
+/* 评论列表 */
+
+/* 底部输入框 */
+.article11 .interactions{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.interactions input{
+  width: 100px;
+  height: 35px;
+  margin: auto 10px;
+  border-radius: 17.5px;
+  border: none;
+  background-color: #e0e0e0;
+}
+.interactions input::placeholder{
+  padding-left: 10px;
+}
+.interactions .iconfont{
+  font-size: 30px;
+  margin: auto 10px;
+}
+.interactions span{
+  margin: auto;
+}
+.interactions .icon-aixin.active{
+  color: rgb(255, 118, 118);
+}
+.interactions .icon-shoucang.active{
+  color: rgb(255, 255, 152);
+}
+/* 评论 */
+/* 评论列表 */
+.comment-list {
+  padding: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.comment-item {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+.comment-item.is-author {
+  border: 1px solid #07C160;
+}
+.comment-header {
+  display: flex;
+  align-items: center;
+}
+.comment-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.comment-actions {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+.reply-btn {
+  margin-left: 10px;
+  color: #07C160;
+}
+.delete-btn {
+  color: #ff4d4d;
+  cursor: pointer;
+}
+.child-comments {
+  margin-left: 20px;
+  border-left: 2px solid #ddd;
+}
+
