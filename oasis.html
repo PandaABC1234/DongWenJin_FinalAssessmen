@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./font_4901129_jcwnkkt2tgs/iconfont.css">
+</head>
+<body>
+  <section class="loginPage" >
+    <h1>登录后更精彩</h1>
+    <div class="login">
+      <div class="alert"></div>
+      <div class="input">
+        <input type="text" placeholder="请输入用户名或手机号" class="phone">
+      </div>
+      <div class="input">
+        <input type="password" placeholder="请输入密码" class="password">
+      </div>
+      <div class="input button">
+       <button type="submit">登录</button>
+      </div>
+      <div class="other">
+        <a href="javascript:;">忘记密码？</a>
+        <a href="javascript:;">手机验证码登录</a>
+      </div>
+    </div>
+    <div class="other">
+      <span class="text">其他登录方式</span>
+      <div class="ways">
+        <ul>
+          <li><a href="javascript:;"><span class="iconfont icon-weibo"></span></a></li>
+          <li><a href="javascript:;"><span class="iconfont icon-weixin"></span></a></li>
+          <li><a href="javascript:;"><span class="iconfont icon-qq"></span></a></li>
+        </ul>
+      </div>
+      <div class="agree">
+        <input type="checkbox"><span class="text">我已阅读并同意 <a href="#" class="agreement">用户协议</a>|<a href="#" class="agreement">隐私条款</a></span>
+        <br><span class="text">以及<a href="#" class="chinamobile"> 中国移动认证服务条款</a></span>
+      </div>
+    </div>
+  </section>
+  <section class="app">
+    <main>
+      <!-- 动态 -->
+      <div class="main active page0" name="page4" style="display: none;">
+        <div class="header">
+            <div class="left">
+              <ul>
+                <li><a href="javascript:;"  id="page1">小森林</a></li>
+                <li><a href="javascript:;" class="active" id="page2">关注</a></li>
+                <li><a href="javascript:;" id="page3">推荐</a></li>
+              </ul>
+              <div class="line"></div>
+            </div>
+            <div class="right">
+              <div class="search"><a href="#"><span class="iconfont icon-sousuo"></span></a></div>
+              <div class="water"><img src="./images/index/微信图片_2025-04-23_215357_304.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- <div class="empty" style="height: 50px;"></div> -->
+        <!-- 主内容 -->
+         <div class="tab-content">
+            <!-- 小森林 -->
+            <div class="forest page1" name="page1">
+              <img src="./images/index/微信图片_2025-04-25_163639_679.jpg" alt="">
+            </div>
+            <!-- 关注 -->
+            <div class="follow page1 active" name="page2">
+              <div class="text">
+                <h2>在绿洲<br>遇见美好遇见你</h2>
+                <div class="line"></div>
+                <span>你关注人的动态会出现在这<br>为你推荐了一些有趣的人，快关注TA们吧</span>
+              </div>
+              <div class="article"></div>
+            </div>
+            <!-- 推荐 -->
+            <div class="recommend page1"  name="page3">
+              <div class="nav"><ul></ul></div>
+              <div class="content"></div>
+              </div>           
+           </div>
+      </div>
+      <!-- 闪聊 -->
+      <div class="flashchat page0 view" name="page5">
+        <img src="./images/index/微信图片_2025-04-25_163639_679.jpg" alt="">
+      </div>
+      <!-- 创作 -->
+      <div class="create page0" name="page6"></div>
+      <!-- 消息 -->
+      <div class="message page0" name="page7">
+        <div class="top">
+          <h1>消息</h1>
+          <div class="icon">
+            <span class="iconfont icon-xianrenzhang_cactus"></span>
+            <span class="iconfont icon-shezhi"></span>
+          </div>
+        </div>
+        <div class="list1">
+          <ul>
+            <li><a href="javascript:;"><img src="./images/index/微信图片_2025-04-28_192148_656.jpg" alt=""><span>新关注</span></a></li>
+            <li><a href="javascript:;"><img src="./images/index/微信图片_2025-04-28_192153_981.jpg" alt=""><span>赞</span></a></li>
+            <li><a href="javascript:;"><img src="./images/index/微信图片_2025-04-28_192158_053.jpg" alt=""><span>评论和@</span></a></li>
+            <li><a href="javascript:;"><img src="./images/index/微信图片_2025-04-28_192202_073.jpg" alt=""><span>礼物</span></a></li>
+          </ul>
+        </div>
+        <div class="chat">
+          <a href="javascript:;">
+            <div class="profile"></div>
+            <span>波奇酱</span>
+          </a>
+        </div>
+      </div>
+      <!-- 我的 -->
+      <div class="user page0" name="page8">
+        <div class="bgi">
+          <div class="set">
+            <span class="iconfont icon-shezhi"></span>
+          </div>
+          <label for="bg"></label>
+          <input class="background" type="file" id="bg">
+        </div>
+        <div class="information">
+          <div class="profile">
+            <label for="head"></label>
+            <input class="background" type="file" id="head">
+          </div>
+          <div class="text">
+            <span class="name">波奇酱</span>
+            <span class="id">绿洲号</span>
+            <span class="self">个人简介</span>
+          </div>
+        </div>
+        <div class="list1">
+          <ul>
+            <li>谁看过我</li>
+            <li>动态</li>
+            <li>关注</li>
+            <li>粉丝</li>
+            <li>获赞与收藏</li>
+          </ul>
+        </div>
+        <div class="list2">
+          <span class="iconfont icon-shizhong"></span>
+          <span class="iconfont icon-gengduoneirong"></span>
+          <span class="iconfont icon-bianzu"></span>
+          <span class="iconfont icon-aixin"></span>
+          <span class="iconfont icon-shoucang"></span>
+        </div>
+      </div>
+      <!-- 底部导航栏 -->
+      <footer>
+        <ul>
+          <li ><a href="javascript:;"><span class="iconfont icon-wode1 active" id="page4"></span><span class="active span1">动态</span></a></li>
+          <li ><a href="javascript:;"><span class="iconfont icon-kuaijiehuifu" id="page5"></span><span class="span1">闪聊</span></a></li>
+          <li ><a href="javascript:;"><span class="iconfont icon-tianjia" id="page6"></span>
+          <span class="span1"></span>
+          </a></li>
+          <li ><a href="javascript:;"><span class="iconfont icon-lingdang" id="page7"></span><span class="span1">消息</span></a></li>
+          <li><a href="javascript:;"><span class="iconfont icon-wode" id="page8"></span><span class="span1">我的</span></a></li>
+        </ul>
+      </footer>
+    </main>
+    <!-- 搜索页面 -->
+    <div class="search"></div>
+    <!-- 搜索结果页 -->
+    <div class="searchresult"></div>
+    <!-- 创作界面 -->
+    <!-- 设置 -->
+    <div class="setting">
+      <header class="h3">
+        <span class="iconfont icon-zuojiantou"></span>
+        <h3>设置</h3>
+      </header>
+      <div class="function">
+        <ul>
+          <li><span>编辑资料</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>账号与安全</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>通用设置</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>隐私设置</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>通知设置</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>检查更新</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>给绿洲提意见</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>关于绿洲</span><span class="iconfont icon-youjiantou"></span></li>
+          <li><span>清理缓存</span><span class="iconfont icon-youjiantou"></span></li>
+        </ul>
+        <button>退出登录</button>
+      </div>
+    </div>
+    <!-- 编辑资料 -->
+     <div class="edit">
+      <header class="h3">
+        <span class="iconfont icon-zuojiantou"></span>
+        <h3>编辑资料</h3>
+      </header>
+      <div class="basic common">
+        <h4>基本信息</h4>
+        <input type="text" placeholder="头像">
+        <input type="text" placeholder="姓名">
+        <input type="text" placeholder="性别">
+        <input type="text" placeholder="生日">
+        <input type="text" placeholder="城市">
+      </div>
+      <div class="introduce common">
+        <h4>自我介绍</h4>
+        <input type="text" placeholder="说说有趣的你，或者你的交友倾向">
+      </div>
+      <div class="add common">
+        <h4>加分信息</h4>
+        <input type="text" placeholder="身高">
+        <input type="text" placeholder="工作">
+        <input type="text" placeholder="学历">
+        <input type="text" placeholder="学校">
+        <input type="text" placeholder="房产">
+        <input type="text" placeholder="车产">
+        <input type="text" placeholder="年收入">
+      </div>
+      <div class="button">
+        <ul>
+          <li>我的名片</li>
+          <li>账号设置</li>
+        </ul>
+      </div>
+     </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/login.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
